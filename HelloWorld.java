@@ -15,6 +15,8 @@ public class HelloWorld {
 
         while(scanner.hasNext()){
             System.out.println(scanner.next());
+            int i =100;
+            System.out.println(i);
         }
     }
 }
