@@ -9,9 +9,11 @@ public class Main {
         NPC kevin = new NPC("kevin");
         NPC ian = new NPC("Ian");
         NPC jost = new NPC("Jost");
+        Erzaehler erzaehler = new Erzaehler();
 
         System.out.println("Gebe deinen Namen an:");
         Spieler spieler = new Spieler(scanner.next());
+        erzaehler.entscheidungTreffen(erzaehler.scanDecision.nextLine());
 
 
         Scanner sc = new Scanner(System.in);
