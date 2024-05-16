@@ -6,6 +6,7 @@ public class Spieler {
     public void setName(String pName) {
         name = pName;
     }
+
     public void entscheidungTreffen(int pEntscheidung){
         if(pEntscheidung == 1){
 
