@@ -1,6 +1,7 @@
 package prioritaetJohn;
 
 import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
@@ -10,6 +11,16 @@ public class Main {
         Textgeber textgeber = new Textgeber();
 
         textgeber.gibText("Texts/Storyparts.csv");
+
+        Scanner sc = new Scanner(System.in);
+        switch (sc.nextInt()){
+            case 1: System.out.println("1");
+            break;
+            case 2: System.out.println("2");
+            break;
+            default:System.out.println("Error");
+            break;
+        }
 
     }
 }
