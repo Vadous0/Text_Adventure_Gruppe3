@@ -1,15 +1,30 @@
 package prioritaetJohn;
 
 import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        /* Die Klasse Scanner kann neben der Eingabe von Nutzern auch Texte aus Datein einlesen hier z.B. die Datei
-         Intro in dem Ordner Textes mit den Namen Intro.csv.
-         */
-        Textgeber textgeber = new Textgeber();
+        Scanner scanner = new Scanner(System.in);
+        NPC kevin = new NPC("kevin");
+        NPC ian = new NPC("Ian");
+        NPC jost = new NPC("Jost");
+        Erzaehler erzaehler = new Erzaehler();
 
-        textgeber.gibText("Texts/Storyparts.csv");
+        System.out.println("Gebe deinen Namen an:");
+        Spieler spieler = new Spieler(scanner.next());
+        erzaehler.entscheidungTreffen(erzaehler.scanDecision.nextLine());
+
+
+        Scanner sc = new Scanner(System.in);
+        switch (sc.nextInt()){
+            case 1: System.out.println("1");
+            break;
+            case 2: System.out.println("2");
+            break;
+            default:System.out.println("Error");
+            break;
+        }
 
     }
 }
